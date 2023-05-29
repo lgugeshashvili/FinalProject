@@ -10,12 +10,7 @@ import java.time.Duration;
 import static DataObject.RegistrationData.*;
 
 public class RegistrationSteps extends RegistrationElements {
-    @Step("შეტყობინების დახურვა")
-    public RegistrationSteps messageclose(){
-        messageclose.shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
 
-        return this;
-    }
     @Step("დალოგინების ველზე გადასვლა")
     public RegistrationSteps logginn(){
         loginn.click();

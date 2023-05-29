@@ -14,8 +14,7 @@ public class Test2 extends ChromeRunner {
     @Severity(SeverityLevel.CRITICAL)
     public void myhome3(){
         RegistrationSteps registrationSteps=new RegistrationSteps();
-        registrationSteps.messageclose()
-                .logginn()
+        registrationSteps.logginn()
                 .closemessage()
                 .registerr()
                 .onemailfield()
@@ -42,8 +41,7 @@ public class Test2 extends ChromeRunner {
     @Severity(SeverityLevel.CRITICAL)
     public void myhome4(){
         RegistrationSteps registrationSteps=new RegistrationSteps();
-        registrationSteps.messageclose()
-                .logginn()
+        registrationSteps.logginn()
                 .closemessage()
                 .registerr()
                 .registrationapply()

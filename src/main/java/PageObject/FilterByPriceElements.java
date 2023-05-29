@@ -24,7 +24,6 @@ public class FilterByPriceElements {
     pricefilter=$(byText("ფასი")),
     priceInput=$(byId("price-to")),
     currencyBtn=$(".switcher-circle"),
-    appartmentPrice=$(".item-price-gel", 0),
             forsale=$(byAttribute("data-adtypes", "1")),
             batumiCity=$(byAttribute("for","city_8742159")),
             alldistricts=$(byText("ყველა უბანი")),

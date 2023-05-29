@@ -8,8 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationElements {
     public SelenideElement
-            messageclose = $(byAttribute("onclick", "rentVoteClose()")),
-            loginn=$(byText("შესვლა")),
+                        loginn=$(byText("შესვლა")),
             registerBtn=$(".black-hover"),
             emailfield=$(byId("Email")),
             passfield=$(byId("Password")),

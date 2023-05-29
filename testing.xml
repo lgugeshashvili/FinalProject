@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Automation Suite" verbose="3" thread-count="8">
+<suite name="Test Automation Suite" verbose="1" thread-count="8">
     <test name="TestSuit1">
         <classes>
             <class name="Test1" />

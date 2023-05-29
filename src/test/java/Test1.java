@@ -2,7 +2,6 @@ import StepObject.FilterByPriceSteps;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.ChromeRunner;
 
@@ -12,8 +11,7 @@ public class Test1 extends ChromeRunner {
     @Severity(SeverityLevel.CRITICAL)
     public void myhome1(){
         FilterByPriceSteps filterByPriceSteps=new FilterByPriceSteps();
-        filterByPriceSteps.messageclose()
-                .realestate()
+        filterByPriceSteps.realestate()
                 .rent()
                 .chooseappartments()
                 .next()
@@ -33,8 +31,7 @@ public class Test1 extends ChromeRunner {
 @Severity(SeverityLevel.CRITICAL)
     public void myhome2(){
     FilterByPriceSteps filterByPriceSteps=new FilterByPriceSteps();
-    filterByPriceSteps.messageclose()
-            .realestate()
+    filterByPriceSteps.realestate()
             .sale()
             .chooseappartments()
             .next()

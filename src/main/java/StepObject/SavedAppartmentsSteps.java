@@ -61,12 +61,10 @@ for(int i=0; i<3; i++){
     public SavedAppartmentsSteps translateintoenglish(){
         flag.click();
         english.click();
-        messageclose.shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
         return this;
     }
     @Step("ინგლისური ენის გადამოწმება")
     public SavedAppartmentsSteps checkenglish(){
-
         String text=translation.getText();
         Assert.assertEquals(text, englishtext);
         return this;
@@ -75,7 +73,6 @@ for(int i=0; i<3; i++){
     public SavedAppartmentsSteps translateintorussian(){
         flag.click();
         russian.click();
-        messageclose.shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
         return this;
     }
     @Step("რუსული ენის გადამოწმება")

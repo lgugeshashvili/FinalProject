@@ -13,8 +13,7 @@ public class Test3 extends ChromeRunner {
     @Severity(SeverityLevel.CRITICAL)
     public static void myhome5(){
         SavedAppartmentsSteps savedAppartmentsSteps=new SavedAppartmentsSteps();
-        savedAppartmentsSteps.messageclose()
-                .favoritesisempty()
+        savedAppartmentsSteps.favoritesisempty()
                 .searchisani(searchoption)
                 .addappartmentstofavorite()
                 .findfavoritesquantity()
@@ -27,8 +26,7 @@ public class Test3 extends ChromeRunner {
     @Severity(SeverityLevel.CRITICAL)
     public static void myhome6() {
         SavedAppartmentsSteps savedAppartmentsSteps=new SavedAppartmentsSteps();
-        savedAppartmentsSteps.messageclose()
-                .translateintoenglish()
+        savedAppartmentsSteps.translateintoenglish()
                 .checkenglish()
                 .translateintorussian()
                 .checkrussian()
