@@ -2,18 +2,18 @@
 <suite name="Test Automation Suite" verbose="1" thread-count="8">
     <test name="TestSuit1">
         <classes>
-            <class name="Test1" />
+            <class name="FilterByPriceTests" />
         </classes>
     </test>
 
     <test name="TestSuit2">
         <classes>
-            <class name="Test2" />
+            <class name="RegistrationTests" />
         </classes>
     </test>
     <test name="TestSuit3">
         <classes>
-            <class name="Test3" />
+            <class name="SavedAppartmentsTests" />
         </classes>
     </test>
 </suite>

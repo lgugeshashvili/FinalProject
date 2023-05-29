@@ -7,7 +7,7 @@ import utils.ChromeRunner;
 
 import static DataObject.RegistrationData.*;
 
-public class Test2 extends ChromeRunner {
+public class RegistrationTests extends ChromeRunner {
 
     @Test
     @Description("ტესტი აკეთებს მომხმარებლის რეგისტრაციას სწორი მნიშვნელობებით")

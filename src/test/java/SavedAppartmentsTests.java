@@ -7,7 +7,7 @@ import utils.ChromeRunner;
 
 import static DataObject.SavedAppartmentsData.searchoption;
 
-public class Test3 extends ChromeRunner {
+public class SavedAppartmentsTests extends ChromeRunner {
     @Test
     @Description("ტესტი ეძებს ბინებს, ამატებს რჩეულებში, ამოწმებს რაოდენობას და შლის რჩეულებიდან")
     @Severity(SeverityLevel.CRITICAL)

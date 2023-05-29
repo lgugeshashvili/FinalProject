@@ -5,7 +5,7 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.Test;
 import utils.ChromeRunner;
 
-public class Test1 extends ChromeRunner {
+public class FilterByPriceTests extends ChromeRunner {
     @Test
     @Description("ტესტი უთითებს მაქსიმალურ ფასს და ამოწმებს შედეგს")
     @Severity(SeverityLevel.CRITICAL)
