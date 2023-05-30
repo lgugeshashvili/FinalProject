@@ -1,5 +1,5 @@
 package DataObject;
 
 public interface FilterByPriceData {
-    int maxPrice= 1000;
+    float maxPrice= 1000;
 }

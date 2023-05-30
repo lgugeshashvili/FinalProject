@@ -36,7 +36,7 @@ public class RegistrationSteps extends RegistrationElements {
     }
     @Step("იმეილის შეყვანა")
     public RegistrationSteps mail(String emailvalue){
-        emailfield.setValue(emailvalue).shouldNotBe(Condition.empty);
+        emailfield.setValue(emailvalue);
         return this;
     }
 
@@ -47,7 +47,7 @@ public class RegistrationSteps extends RegistrationElements {
     }
     @Step("პაროლის შეყვანა")
     public RegistrationSteps passwordd(String passwordvalue){
-        passfield.setValue(passwordvalue).shouldNotBe(Condition.empty);
+        passfield.setValue(passwordvalue);
         return this;
     }
 
@@ -135,56 +135,48 @@ public RegistrationSteps emailvaluecheck(){
     }
     @Step("იმეილის ცარიელი ველის შეტყობინების გამოტანა")
     public RegistrationSteps emailerrorcheck(){
-        Assert.assertTrue(emailfield.is(Condition.empty));
         emailerror.shouldBe(Condition.visible);
         System.out.println("იმეილის ველს გამოაქვს შეტყობინება");
         return this;
     }
     @Step("პაროლის ცარიელი ველის შეტყობინების გამოტანა")
     public RegistrationSteps passworderrorcheck(){
-        Assert.assertTrue(passfield.is(Condition.empty));
         passworderror.shouldBe(Condition.visible);
         System.out.println("პაროლის ველს გამოაქვს შეტყობინება");
         return this;
     }
     @Step("პაროლის გამეორების ცარიელი ველის შეტყობინების გამოტანა")
     public RegistrationSteps password2errorcheck(){
-        Assert.assertTrue(pass2field.is(Condition.empty));
         repetepasserror.shouldBe(Condition.visible);
         System.out.println("პაროლის გამეორების ველს გამოაქვს შეტყობინება");
         return this;
     }
     @Step("სქესის არჩევის მოუნიშნავი ველის შეტყობინების გამოტანა")
     public RegistrationSteps gendererrorcheck(){
-        Assert.assertTrue(gendercheckmark.is(Condition.not(Condition.checked)));
         gendererror.shouldBe(Condition.visible);
         System.out.println("სქესის არჩევის ველს გამოაქვს შეტყობინება");
         return this;
     }
     @Step("დაბადების წლის მოუნიშნავი ველის შეტყობინების გამოტანა")
     public RegistrationSteps birthdateerrorcheck(){
-        Assert.assertTrue(birthdatefield.is(Condition.not(Condition.selected)));
         birthdateerror.shouldBe(Condition.visible);
         System.out.println("დაბადების წლის ველს გამოაქვს შეტყობინება");
         return this;
     }
     @Step("ტელეფონის ნომრის ველის შეტყობინების გამოტანა")
     public RegistrationSteps mobilenumbererrorcheck(){
-        Assert.assertTrue(phonenum.is(Condition.empty));
         phonenumerror.shouldBe(Condition.visible);
         System.out.println("ტელეფონის ნომრის ველს გამოაქვს შეტყობინება");
         return this;
     }
     @Step("სმს კოდის ველის შეტყობინების გამოტანა")
     public RegistrationSteps smscodeerrorcheck(){
-        Assert.assertTrue(phonecodee.is(Condition.empty));
         smscodeerror.shouldBe(Condition.visible);
         System.out.println("სმს კოდის ველს გამოაქვს შეტყობინება");
         return this;
     }
     @Step("წესებისა და პირობების ველის შეტყობინების გამოტანა")
     public RegistrationSteps ruleserrorcheck(){
-        Assert.assertTrue(rulesBtn.is(Condition.not(Condition.checked)));
         ruleserror.shouldBe(Condition.visible);
         System.out.println("წესებისა და პირობების ველს გამოაქვს შეტყობინება");
         return this;

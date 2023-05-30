@@ -11,12 +11,7 @@ import static DataObject.SavedAppartmentsData.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class SavedAppartmentsSteps extends SavedAppartmentsElements {
-    @Step("შეტყობინების დახურვა")
-    public SavedAppartmentsSteps messageclose(){
-        messageclose.shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
 
-        return this;
-    }
     @Step("გადამოწმება, რომ რჩეულები ცარიელია")
     public SavedAppartmentsSteps favoritesisempty(){
        String saveditemsquantity=saveditemsnumber.getText();

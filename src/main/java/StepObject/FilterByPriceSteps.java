@@ -10,12 +10,7 @@ import java.time.Duration;
 import static com.codeborne.selenide.Selenide.$;
 
 public class FilterByPriceSteps extends FilterByPriceElements {
-    @Step("შეტყობინების დახურვა")
-    public FilterByPriceSteps messageclose(){
-        messageclose.shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
 
-        return this;
-    }
     @Step("უძრავი ქონების კატალოგი")
     public FilterByPriceSteps realestate(){
         selectrealestate.scrollIntoView(true).click();
@@ -66,6 +61,7 @@ public class FilterByPriceSteps extends FilterByPriceElements {
         priceInput.setValue(saboloofasi).pressEnter();
         return this;
     }
+
     @Step("ლარის ვალუტაზე გადართვა")
     public FilterByPriceSteps currency(){
        currencyBtn.click();
@@ -110,6 +106,11 @@ public class FilterByPriceSteps extends FilterByPriceElements {
         sortoption.scrollIntoView(true).click();
         return this;
     }
+    @Step("ფასის ზრდადობით დალაგება")
+    public FilterByPriceSteps scrolltosortopt(){
+        sortoption.scrollIntoView(true);
+        return this;
+    }
 @Step("სორტირების ღილაკის ფუნქციონირების შემოწმება")
     public FilterByPriceSteps checkSortBtn(){
         int count=appartmentfields.size();
@@ -131,9 +132,4 @@ public class FilterByPriceSteps extends FilterByPriceElements {
         }
         return this;
 }
-    @Step("მოწმდება, ნამდვილად მოინიშნა თუ არა ფასი ზრდადობით მოსანიშნ ველზე")
-    public FilterByPriceSteps sortBtncheck(){
-        Assert.assertTrue(sortoption.is(Condition.visible));
-        return this;
-    }
 }

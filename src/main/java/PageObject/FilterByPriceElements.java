@@ -12,7 +12,6 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class FilterByPriceElements {
     public SelenideElement
-    messageclose= $(byAttribute("onclick", "rentVoteClose()")),
     selectrealestate=$(".p-absolute"),
     forrent=$(byAttribute("data-adtypes", "3")),
     appartments=$(byAttribute("for", "cat1")),
@@ -22,6 +21,7 @@ public class FilterByPriceElements {
     varketiliBtn=$(byAttribute("for", "loc411355289")),
     findBtn=$(byText("მოძებნე")),
     pricefilter=$(byText("ფასი")),
+    takepricevalue=$(byAttribute("for","price-to")),
     priceInput=$(byId("price-to")),
     currencyBtn=$(".switcher-circle"),
             forsale=$(byAttribute("data-adtypes", "1")),
